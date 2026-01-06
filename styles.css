@@ -84,8 +84,13 @@ nav {
 
 /* ABOUT ME */
 
-#about {
+#about-me {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__info {
     display: flex;
     flex-direction: column;
 }
@@ -124,4 +129,23 @@ nav {
 
 .about-me__info--title {
     margin-bottom: 16px;
+}
+
+.about-me__link {
+    font-size: 20px;
+    text-decoration: none;
+    color: #242424;
+    padding: 0 16px;
+}
+
+.about-me__img--container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.about-me__img {
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
