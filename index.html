@@ -12,21 +12,21 @@
         <nav>
             <div class="personal__logo">Naomi O'Leary</div>
             <ul class="nav__link--list">
-                <li>
+                <li class="nav__link">
                     <a href="" class="
                         nav__link--anchor
                         link__hover-effect
                         link__hover-effect--black
                         ">Languages</a>
                 </li>
-                <li>
+                <li class="nav__link">
                     <a href="" class="
                         nav__link--anchor
                         link__hover-effect
                         link__hover-effect--black
                         ">Projects</a>
                 </li>
-                <li>
+                <li class="nav__link">
                     <a href="" class="
                          nav__link--anchor
                          nav__link--anchor-primary
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <figure class="about-me__img--container">
-                    <img src="./assets/undraw_websites.svg" class="about-me__img" alt="">
+                    <img src="./assets/undraw_web-development_f0tp (1).svg" class="about-me__img" alt="">
                 </figure>
             </div>
         </div>
@@ -127,16 +127,59 @@
             <div class="row">
                 <h1 class="section__title">See some of my <span class="text--purple">projects</span> below</h1>
                 <ul class="project__list">
-                    <li class="project__wrapper">
-                        <img src="./assets/loopit.png" class="project__img" alt="">
-                        <div class="project__description">
-                            <h3 class="project__description--title">Car Sales Project</h3>
-                            <h4 class="project__description--sub-title">HTML, CSS.....  JavaScript </h4>
-                            <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus architecto ullam iusto dignissimos. Laborum modi ipsum architecto repudiandae, explicabo corporis ab in similique optio nemo doloribus neque odit accusamus natus.</p>
-                            <div class="project__description--links">
-                                <a href="https://github.com/naomi-oleary" class="project__description--link">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="data:image/jpeg;base64,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" class="project__img" alt="">
+                            <div class="project__description">
+                                <h3 class="project__description--title">Sauna Company Website</h3>
+                                <h4 class="project__description--sub-title">HTML, CSS.....  JavaScript </h4>
+                                <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus architecto ullam iusto dignissimos. Laborum modi ipsum architecto repudiandae, explicabo corporis ab in similique optio nemo doloribus neque odit accusamus natus.</p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/naomi-oleary" target="_blank" class="project__description--link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="my website" target="_blank" class="project__description--link">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAA7VBMVEX////x7+Lf3dA7g4JNo6T29vZNTlA/P0ExMTS7vLyenp9AQkL39ejJyL9JSk1gYWNcW1rTpUc4ODojIybU1NDm5dpqaWfU0sZBd3ZMlZf1u1B5eXfw8N/ttk9LpKJOoaVCjo3ToDt7o5ssfHxelI+v0s8+SU3n5+WwsKxUVFOlpaOEhoNtbnAuLDMbHB83NTv06Mrx16Xsw3j0wmnXr2DbtW3Zv4fjypvk17Tz3rTtsj/eu3ru5tXmx37QplCjv7bG1MwAcHKSsai2xrvX6OCRwLp1s7IwlZXC39mntbBlkJFLV1pNhopCamtcfnwLNP4gAAAEfklEQVR4nO3bbVfaSByGcUIQgsSoKVMsxqhA6hMuFNe1bN0SQcBK3e//cXYmEElIQpiekyHp3tcrj8cX/vjPJBM9yeUQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEELRXVQFdCGEsnN5/PGAt6siX1dX7WsBnJ2bUkkralql9F5l+bXnu76UW4WjTkfXFaWdvGZXZ59cqdI+5qn9kaMD5ZZ9AB+Ok7bszC03NcJVvsbT3o2iU80fSY+mWqGWyrVkSFyRPFdkl2GU64Qx5QqbC1H5LLyYfP5YoZhdAZjiJa+FG0MuNV0MZn8vcUx+7+C3wnSEYDRguDFilhkwwAADDDDAAAOMr0hk5jBGt9s11HBPdjDOI/Tjl97d3Z/3f3VDNdnBME63V6/XTw4PD78/hP15IDMY9st37+oLzPl5mCYzGLbGen+7GNrXLGMMqe9YFpjzb4+Bv0RlByNJ/9Q9mMPv3QxPRjJOfJjz4DrLMKYvra6zjGOMrGKkng8TcjnLEsZ/NbvP9tVsfs90MQ+BwazBzP/jkSaM1F9iwm4zkRgyaMmy3LBThZH6J+5x5ttjyFEzAkPOmtQiN58Gqz+w3UeAbu/uhGLuQ8+ZURg2Fqfm6my2iXEOm/0vD18j/qMWjmk0XYz8StKDme+SiCezKMxQXvY0ShEmpjDMwGORmy2SZcyoJfsaZBhjr1jkVnYxNc/mXzQkWcUELXLLTjHGe3BexQyDFv9oUoIxKMKIOWgOnkIs8tkoZRimeLbGFvGD/Bg7bC708txIGYZSxua0MJ1aUiTGDqWwRiQ1GPbbq8/jacHJp/Fi7Fb4YNhoaqnBMMvLpOBmRUymETkYOpoUYVTLNE9dzORZDcMM11iarVpqMOq4QCnm3HJqejRLzGCNhWoGKcHQ7UIJ7mDYhMZkFUNGZ2sx8k87FRj1efI+leW2MfyY6M3vjmaYBoxqm2yNnfowU0v1Ykg1zkI1ZPsYg12RPbvf1bx4MbXXWIt759wmhlCLyeZiBjTqEtOIt9BnTnuLGMPZLtMAw70QOD/iYMJPZIEaZKuTscMd89FMyHwyZLTJXFij7WFUYk1PV/eKt7HKMGS0IWX+zLkdDL27RCyw94VmMUzsRdnTgGwJY0/WU1iWROx1J7LAaGwiGuMckq14Cj3Y2ITHwp45BWOce7sVs8TYKqNHnAmfpdmya6KXmSGNC+t2vjsY6ok5kQU0Q+F7hkzYZSx2NuxSx4s5+7EvFvMy3WC/LOLEyM3XmVCMNTXjp/KrGPnos5hXThwMcQ6WiU1GKMa5u5i/B+ZlYpqbXMiygGkUeJZYqjHF2U96U+eypBvDaUkrplQsFo84Kb+AeasImow2+5T0ZNhgBL3aqL3xajgxR7OOCMyF8zqwNvv3E1fyEU9vn523u2+rCWNy+xXnHXeNr5LOlWPR9aQtuapW4Xy3nxX1av2aOko5cUyu3HY/us3TlQ/cHVwmb6Hbpny9m3zlxDfMoh0BCaIghBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIof9T/wGzlgG5tZp6PAAAAABJRU5ErkJggg==" class="project__img" alt="">
+                            <div class="project__description">
+                                <h3 class="project__description--title">Car Sales Project</h3>
+                                <h4 class="project__description--sub-title">HTML, CSS.....  JavaScript </h4>
+                                <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus architecto ullam iusto dignissimos. Laborum modi ipsum architecto repudiandae, explicabo corporis ab in similique optio nemo doloribus neque odit accusamus natus.</p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/naomi-oleary" target="_blank" class="project__description--link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    </a>
+                                    <a href="my website" target="_blank" class="project__description--link">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAA7VBMVEX////x7+Lf3dA7g4JNo6T29vZNTlA/P0ExMTS7vLyenp9AQkL39ejJyL9JSk1gYWNcW1rTpUc4ODojIybU1NDm5dpqaWfU0sZBd3ZMlZf1u1B5eXfw8N/ttk9LpKJOoaVCjo3ToDt7o5ssfHxelI+v0s8+SU3n5+WwsKxUVFOlpaOEhoNtbnAuLDMbHB83NTv06Mrx16Xsw3j0wmnXr2DbtW3Zv4fjypvk17Tz3rTtsj/eu3ru5tXmx37QplCjv7bG1MwAcHKSsai2xrvX6OCRwLp1s7IwlZXC39mntbBlkJFLV1pNhopCamtcfnwLNP4gAAAEfklEQVR4nO3bbVfaSByGcUIQgsSoKVMsxqhA6hMuFNe1bN0SQcBK3e//cXYmEElIQpiekyHp3tcrj8cX/vjPJBM9yeUQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEELRXVQFdCGEsnN5/PGAt6siX1dX7WsBnJ2bUkkralql9F5l+bXnu76UW4WjTkfXFaWdvGZXZ59cqdI+5qn9kaMD5ZZ9AB+Ok7bszC03NcJVvsbT3o2iU80fSY+mWqGWyrVkSFyRPFdkl2GU64Qx5QqbC1H5LLyYfP5YoZhdAZjiJa+FG0MuNV0MZn8vcUx+7+C3wnSEYDRguDFilhkwwAADDDDAAAOMr0hk5jBGt9s11HBPdjDOI/Tjl97d3Z/3f3VDNdnBME63V6/XTw4PD78/hP15IDMY9st37+oLzPl5mCYzGLbGen+7GNrXLGMMqe9YFpjzb4+Bv0RlByNJ/9Q9mMPv3QxPRjJOfJjz4DrLMKYvra6zjGOMrGKkng8TcjnLEsZ/NbvP9tVsfs90MQ+BwazBzP/jkSaM1F9iwm4zkRgyaMmy3LBThZH6J+5x5ttjyFEzAkPOmtQiN58Gqz+w3UeAbu/uhGLuQ8+ZURg2Fqfm6my2iXEOm/0vD18j/qMWjmk0XYz8StKDme+SiCezKMxQXvY0ShEmpjDMwGORmy2SZcyoJfsaZBhjr1jkVnYxNc/mXzQkWcUELXLLTjHGe3BexQyDFv9oUoIxKMKIOWgOnkIs8tkoZRimeLbGFvGD/Bg7bC708txIGYZSxua0MJ1aUiTGDqWwRiQ1GPbbq8/jacHJp/Fi7Fb4YNhoaqnBMMvLpOBmRUymETkYOpoUYVTLNE9dzORZDcMM11iarVpqMOq4QCnm3HJqejRLzGCNhWoGKcHQ7UIJ7mDYhMZkFUNGZ2sx8k87FRj1efI+leW2MfyY6M3vjmaYBoxqm2yNnfowU0v1Ykg1zkI1ZPsYg12RPbvf1bx4MbXXWIt759wmhlCLyeZiBjTqEtOIt9BnTnuLGMPZLtMAw70QOD/iYMJPZIEaZKuTscMd89FMyHwyZLTJXFij7WFUYk1PV/eKt7HKMGS0IWX+zLkdDL27RCyw94VmMUzsRdnTgGwJY0/WU1iWROx1J7LAaGwiGuMckq14Cj3Y2ITHwp45BWOce7sVs8TYKqNHnAmfpdmya6KXmSGNC+t2vjsY6ok5kQU0Q+F7hkzYZSx2NuxSx4s5+7EvFvMy3WC/LOLEyM3XmVCMNTXjp/KrGPnos5hXThwMcQ6WiU1GKMa5u5i/B+ZlYpqbXMiygGkUeJZYqjHF2U96U+eypBvDaUkrplQsFo84Kb+AeasImow2+5T0ZNhgBL3aqL3xajgxR7OOCMyF8zqwNvv3E1fyEU9vn523u2+rCWNy+xXnHXeNr5LOlWPR9aQtuapW4Xy3nxX1av2aOko5cUyu3HY/us3TlQ/cHVwmb6Hbpny9m3zlxDfMoh0BCaIghBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIof9T/wGzlgG5tZp6PAAAAABJRU5ErkJggg==" class="project__img" alt="">
+                            <div class="project__description">
+                                <h3 class="project__description--title">Car Sales Project</h3>
+                                <h4 class="project__description--sub-title">HTML, CSS.....  JavaScript </h4>
+                                <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus architecto ullam iusto dignissimos. Laborum modi ipsum architecto repudiandae, explicabo corporis ab in similique optio nemo doloribus neque odit accusamus natus.</p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/naomi-oleary" target="_blank" class="project__description--link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    </a>
+                                    <a href="my website" target="_blank" class="project__description--link">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -144,5 +187,42 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="row footer__row">
+            <a href="#" class="footer__anchor">
+                <figure class="footer__logo">
+                    <img src="./assets/transparent-logo.svg" class="footer__logo--img" alt="">
+                </figure>
+                <span class="footer__logo--popper">
+                    Top 
+                    <i class="fa-solid fa-arrow-up"></i>
+                </span>
+            </a>
+            <div class="footer__social--list">
+                <a href="https://google.com" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white"
+                target="_blank">GitHub</a>
+                <a href="mailto:oleary.ng@gmail.com" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white"
+                target="_blank">Email</a>
+                <a href="https://google.com" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white"
+                target="_blank">LinkedIn</a>
+                <a href="./assets/Example Resume.pdf" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect-white"
+                target="_blank" download>Resume</a>
+            </div>
+            <div class="footer__copyright">Copyright © 2026 Naomi O'Leary</div>
+        </div>
+    </footer>
+    
 </body>
 </html>
